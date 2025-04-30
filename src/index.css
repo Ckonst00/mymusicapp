@@ -3,3 +3,27 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer base {
+  body {
+    font-family: 'Courier New', Courier, monospace;
+  }
+}
+
+.app-container {
+  @apply relative min-h-screen overflow-hidden;
+}
+
+.video-bg {
+  @apply absolute top-0 left-0 w-full h-full object-cover z-[-1];
+}
+
+.video-overlay {
+  @apply absolute top-0 left-0 w-full h-full z-[-1];
+  background-color: rgba(0, 0, 0, 0.5); /* Change the z value to apply dimming effect more or less */
+}
+
+.main {
+  @apply relative z-10;
+}
+
