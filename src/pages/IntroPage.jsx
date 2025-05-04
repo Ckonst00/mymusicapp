@@ -13,10 +13,17 @@ function IntroPage({onContinue}) {
     }, [onContinue]);
 
     return (
-        <div className="h-screen w-screen bg-black flex items-center justify-center text-white text-2xl">
-            Press Enter to continue
+        <div className="intro-layout">
+            <div className="intro-content">
+                <p className="intro-text">Press Enter to continue</p>
+                <div className="intro-picture">
+                    <img
+                        src="MediaContent/epa-smaller.png"
+                        alt="Energy Star Logo"
+                    />
+                </div>
+            </div>
         </div>
     );
-};
-
+}
 export default IntroPage;
