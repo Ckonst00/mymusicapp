@@ -54,6 +54,9 @@ html {
   height: 0;
   padding-bottom: 75%;  /* 75% is the height ratio for 4:3 */
   position: relative;
+
+  border-color: red;
+  border-width: 2px;
 }
 
 .intro-content {
@@ -66,10 +69,17 @@ html {
   justify-content: center;
   align-items: center;
   text-align: center;
+
+  border-color: white;
+  border-width: 2px;
 }
 
 .intro-picture img {
+  padding: 5px;
   width: 100%;
   height: auto;
   object-fit: contain;
+
+  border-color: white;
+  border-width: 2px;
 }
