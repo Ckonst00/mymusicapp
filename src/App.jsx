@@ -4,7 +4,7 @@ import IntroPage from "./pages/IntroPage.jsx";
 
 
 function App() {
-    const [introPage, setIntroPage] = useState(true);
+    const [introPage, setIntroPage] = useState(false);
 
     const handleIntroPage = () => {
         setIntroPage(false);
